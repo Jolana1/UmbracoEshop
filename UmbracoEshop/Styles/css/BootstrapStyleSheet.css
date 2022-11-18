@@ -173,3 +173,8 @@ padding:10px 0 10px 0;
         width: 100%;
         height: 100%;
     }
+/*protected-menu*/
+.protected-menubar {
+    background-color:#f0f0f0;
+    padding:10px;
+}

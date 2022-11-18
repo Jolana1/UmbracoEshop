@@ -326,6 +326,9 @@
     <Content Include="Scripts\chosen.jquery.min.js" />
     <Content Include="Scripts\document.ready.js" />
     <Content Include="Scripts\document.ready.min.js" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Member\Login.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Member\MemberInfo.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -4686,6 +4689,9 @@
     <Content Include="Views\Partials\Layout\_HtmlHead.cshtml" />
     <Content Include="Views\Partials\Layout\_HtmlScripts.cshtml" />
     <Content Include="Views\layout.cshtml" />
+    <Content Include="Views\MacroPartials\LoginForm.cshtml" />
+    <Content Include="Views\ProtectedPage.cshtml" />
+    <Content Include="Views\Partials\Eshop\ProtectedMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -4695,7 +4701,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Styles\video\" />
-    <Folder Include="Views\MacroPartials\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmbracoEshop.lib\UmbracoEshop.lib.csproj">
+      <Project>{84767e13-e0fc-4fec-87ed-a719dde1c819}</Project>
+      <Name>UmbracoEshop.lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
