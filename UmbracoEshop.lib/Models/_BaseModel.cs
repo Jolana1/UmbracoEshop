@@ -28,6 +28,19 @@ namespace UmbracoEshop.lib.Models
             }
         }
     }
+    public class _PagingModel
+    {
+        public const int DefaultItemsPerPage = 20;
+        public const int AllItemsPerPage = 100000000;
+
+        public int ItemsPerPage { get; set; }
+        public int TotalItems { get; set; }
+
+        public _PagingModel()
+        {
+            ItemsPerPage = DefaultItemsPerPage;
+        }
+    }
 
     public class _SeoViewPage : UmbracoViewPage
     {

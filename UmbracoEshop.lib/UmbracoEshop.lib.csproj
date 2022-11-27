@@ -67,11 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\VyrobcaController.cs" />
     <Compile Include="Controllers\_BaseController.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\VyrobcaModel.cs" />
     <Compile Include="Models\_BaseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\UmbracoEshopMemberRepository.cs" />
+    <Compile Include="Repositories\VyrobcaRepository.cs" />
     <Compile Include="Repositories\_BaseRepository.cs" />
     <Compile Include="Util\ConfigurationUtil.cs" />
   </ItemGroup>

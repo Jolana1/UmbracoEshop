@@ -34,7 +34,7 @@ namespace UmbracoEshop.lib.Controllers
                     }
                     else
                     {
-                        return this./*RedirectToUmbracoPageResult */RedirectToOsobnaStrankaUmbracoPage(ConfigurationUtil.AfterLoginFormId);
+                        return this.RedirectToEshopUmbracoPage(ConfigurationUtil.AfterLoginFormId);
                     }
                 }
                 else
@@ -50,7 +50,7 @@ namespace UmbracoEshop.lib.Controllers
             TempData.Clear();
             Session.Clear();
             Members.Logout();
-            return this./*RedirectToUmbracoPageResult*/RedirectToOsobnaStrankaUmbracoPage(ConfigurationUtil.LoginFormId);
+            return this.RedirectToEshopUmbracoPage(ConfigurationUtil.LoginFormId);
         }
         public ActionResult MemberInfo() => View();
 
@@ -101,7 +101,7 @@ namespace UmbracoEshop.lib.Controllers
         //                    TextTemplate.GetTemplateText("LostPassword_Sk", paramList),
         //                    member.Email);
 
-        //                return this.        protected RedirectToUmbracoPageResult RedirectToOsobnaStrankaUmbracoPage(ConfigurationUtil.AfterPasswordResetFormId);
+        //                return this.        protected RedirectToUmbracoPageResult RedirectToEshopUmbraco(ConfigurationUtil.AfterPasswordResetFormId);
         //            }
         //        }
         //    }
@@ -135,7 +135,7 @@ namespace UmbracoEshop.lib.Controllers
         //        }
         //        else
         //        {
-        //            return this.        protected RedirectToUmbracoPageResult RedirectToOsobnaStrankaUmbracoPage(ConfigurationUtil.AfterLoginFormId);
+        //            return this.        protected RedirectToUmbracoPageResult RedirectToEshopUmbraco(ConfigurationUtil.AfterLoginFormId);
         //        }
         //    }
 

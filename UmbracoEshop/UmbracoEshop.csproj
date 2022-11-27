@@ -329,6 +329,9 @@
     <Content Include="App_Plugins\UmbracoEshop\Views\Member\Login.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Member\MemberInfo.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Web.config" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobca\ConfirmDeleteRecord.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobca\EditRecord.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobca\GetRecords.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -4692,6 +4695,10 @@
     <Content Include="Views\MacroPartials\LoginForm.cshtml" />
     <Content Include="Views\ProtectedPage.cshtml" />
     <Content Include="Views\Partials\Eshop\ProtectedMenu.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobcovia.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobcoviaOdstranit.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobcoviaPridat.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobcoviaUpravit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

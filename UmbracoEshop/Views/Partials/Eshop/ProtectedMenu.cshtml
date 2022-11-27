@@ -31,34 +31,34 @@
                         </ul>
                         <div class="separator"></div>
                         <ul class="admin-menu">
-                            <li><a href="@Url.Content("~/moj-ucet/nastavenia")">Nastavenia</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/krajiny")">Krajiny</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/sposoby-dopravy")">Spôsoby dopravy</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/sposoby-platby")">Spôsoby platby</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/stavy-objednavky")">Stavy objednávky</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/stavy-uhrady")">Stavy úhrady</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/nastavenia")">Nastavenia</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/krajiny")">Krajiny</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/sposoby-dopravy")">Spôsoby dopravy</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/sposoby-platby")">Spôsoby platby</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/stavy-objednavky")">Stavy objednávky</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/stavy-uhrady")">Stavy úhrady</a></li>
                         </ul>
                         <div class="separator"></div>
                         <ul class="admin-menu">
-                            <li><a href="@Url.Content("~/moj-ucet/dostupnost-produktov")">Dostupnosť produktov</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/vlastnosti-produktov")">Vlastnosti produktov</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/dostupnost-produktov")">Dostupnosť produktov</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/vlastnosti-produktov")">Vlastnosti produktov</a></li>
                         </ul>
                         <div class="separator"></div>
                         <ul class="admin-menu">
-                            <li><a href="@Url.Content("~/moj-ucet/uzivatelia")">Užívatelia</a></li>
-                            <li><a href="@Url.Content("~/moj-ucet/zakaznici")">Zákazníci</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/uzivatelia")">Užívatelia</a></li>
+                            <li><a href="@Url.Content("~/clenska-sekcia/zakaznici")">Zákazníci</a></li>
                         </ul>
                     </div>*@
 
                     <div class="separator"></div>
                     <ul class="admin-menu">
-                        <li><a href="@Url.Content("~/moj-ucet/vyrobcovia")">Výrobcovia</a></li>
-                        <li><a href="@Url.Content("~/moj-ucet/produkty")">Produkty</a></li>
-                        @*<li><a href="@Url.Content("~/moj-ucet/kategorie")">Kategórie</a></li>*@
+                        <li><a href="@Url.Content("~/clenska-sekcia/vyrobcovia")">Výrobcovia</a></li>
+                        <li><a href="@Url.Content("~/clenska-sekcia/produkty")">Produkty</a></li>
+                        @*<li><a href="@Url.Content("~/clenska-sekcia/kategorie")">Kategórie</a></li>*@
                     </ul>
                     @*<div class="separator"></div>
                     <ul class="admin-menu">
-                        <li><a href="@Url.Content("~/moj-ucet/objednavky")">Objednávky</a></li>
+                        <li><a href="@Url.Content("~/clenska-sekcia/objednavky")">Objednávky</a></li>
                     </ul>*@
                     addSeparator = true;
                 }
@@ -69,9 +69,9 @@
                         <div class="separator"></div>
                     }
                     <ul class="customer-menu">
-                        <li><a href="@Url.Content("~/moj-ucet/moje-heslo")">Zmena hesla</a></li>
-                        <li><a href="@Url.Content("~/moj-ucet/moje-osobne-udaje")">Moje osobné údaje</a></li>
-                        <li><a href="@Url.Content("~/moj-ucet/moje-objednavky")">Moje objednávky</a></li>
+                        <li><a href="@Url.Content("~/clenska-sekcia/moje-heslo")">Zmena hesla</a></li>
+                        <li><a href="@Url.Content("~/clenska-sekcia/moje-osobne-udaje")">Moje osobné údaje</a></li>
+                        <li><a href="@Url.Content("~/clenska-sekcia/moje-objednavky")">Moje objednávky</a></li>
                     </ul>
                 }
 
@@ -79,7 +79,7 @@
             @using (Html.BeginUmbracoForm<UmbracoEshop.lib.Controllers.MemberController>("Logout", null, new { @class = "form-horizontal", role = "form" }))
             {
                 <div class="logout-btn">
-                    <a href="#" onclick="document.getElementById('submitProtectedLogoutButton').click(); return false;">ODHLÁSIŤ</a>
+                    <a href="#" onclick="document.getElementById('submitProtectedLogoutButton').click(); return false;"class="btn btn-primary btn-lg">ODHLÁSIŤ</a>
                     <input type="submit" id="submitProtectedLogoutButton" class="hidden" />
                 </div>
             }

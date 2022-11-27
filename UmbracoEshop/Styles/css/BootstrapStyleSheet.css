@@ -178,3 +178,105 @@ padding:10px 0 10px 0;
     background-color:#f0f0f0;
     padding:10px;
 }
+/*form-item-hidden*/
+.form-item-hidden{
+    display:none;
+}
+/* Table webgrid */
+table.webgrid {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-bottom: 1px solid #e9ebec;
+    margin: 10px 0 60px 0
+}
+
+    table.webgrid td, table.webgrid th {
+        border: none;
+        border-top: 1px solid #e9ebec;
+        padding: 10px 12px 7px 10px;
+        vertical-align: top
+    }
+
+    table.webgrid th {
+        text-align: left;
+        font: bold 14px;
+        color: #000;
+        text-transform: uppercase
+    }
+
+        table.webgrid th .btn {
+            text-transform: none
+        }
+
+    table.webgrid tr {
+        -webkit-transition: background-color 150ms ease;
+        -moz-transition: background-color 150ms ease;
+        -o-transition: background-color 150ms ease;
+       /* -ms-transition: background-color 150ms ease;*/
+        transition: background-color 150ms ease
+    }
+
+        table.webgrid tr.row-alt {
+            background-color: #F9F9F9;
+        }
+
+            table.webgrid tr:hover, table.webgrid tr.row-alt:hover {
+                background-color: #fff3d5
+            }
+
+    table.webgrid .nowrap {
+        white-space: nowrap
+    }
+
+    table.webgrid tr td span.tools {
+        white-space: nowrap;
+    }
+
+        table.webgrid tr td span.tools a {
+            padding-left: 5px;
+            cursor: pointer
+        }
+
+        table.webgrid tr td span.tools input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+    table.webgrid tr.paging td {
+        font-weight: bold;
+    }
+
+        table.webgrid tr.paging td a {
+            padding: 5px;
+        }
+
+    table.webgrid tr th span.tools {
+        white-space: nowrap;
+    }
+
+        table.webgrid tr th span.tools input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+    table.webgrid tr td span.tools a {
+        color: #726539;
+    }
+
+    table.webgrid tr.new-date-row {
+        border-top: 5px solid rgba(17, 125, 191, 0.2);
+        background-color: rgba(17, 125, 191, 0.2);
+    }
+
+    table.webgrid tr a {
+        text-decoration: none;
+        color: #726539;
+    }
+
+    table.webgrid tbody tr a:hover {
+        text-decoration: underline;
+        color: #726539;
+    }
+
+    table.webgrid img.grid-img {
+        max-height: 50px;
+    }

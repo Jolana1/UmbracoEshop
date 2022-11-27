@@ -19,11 +19,11 @@ namespace UmbracoEshop.lib.Controllers
             }
         }
 
-        protected RedirectToUmbracoPageResult RedirectToOsobnaStrankaUmbracoPage(string pageKey)
+        protected RedirectToUmbracoPageResult RedirectToEshopUmbracoPage(string pageKey)
         {
             return this.RedirectToUmbracoPage(GetPageId(pageKey));
         }
-        protected RedirectToUmbracoPageResult RedirectToOsobnaStrankaUmbracoPage(string pageKey, string queryString)
+        protected RedirectToUmbracoPageResult RedirectToEshopUmbracoPage(string pageKey, string queryString)
         {
             return this.RedirectToUmbracoPage(GetPageId(pageKey), queryString);
         }
