@@ -89,6 +89,7 @@ namespace UmbracoEshop.lib.Repositories
         public const string DbTableName = "eshopVyrobca";
 
         public string NazovVyrobcu { get; set; }
+        //public string KodVyrobcu { get; set; }
         //public string ProducerDescription { get; set; }
         //public string ProducerWeb { get; set; }
     }

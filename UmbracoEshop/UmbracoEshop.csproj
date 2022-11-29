@@ -332,6 +332,9 @@
     <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobca\ConfirmDeleteRecord.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobca\EditRecord.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobca\GetRecords.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobok\ConfirmDeleteRecord.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobok\EditRecord.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobok\GetRecords.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -4699,6 +4702,10 @@
     <Content Include="Views\MacroPartials\protVyrobcoviaOdstranit.cshtml" />
     <Content Include="Views\MacroPartials\protVyrobcoviaPridat.cshtml" />
     <Content Include="Views\MacroPartials\protVyrobcoviaUpravit.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobky.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobkyOdstranit.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobkyPridat.cshtml" />
+    <Content Include="Views\MacroPartials\protVyrobkyUpravit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

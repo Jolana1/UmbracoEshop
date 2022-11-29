@@ -1,0 +1,44 @@
+﻿@using UmbracoEshop.lib.Models
+@model VyrobokPagingListModel
+
+@{
+    string urlInsert = Url.Content("~/clenska-sekcia/vyrobky/pridat");
+    string urlUpdate = Url.Content("~/clenska-sekcia/vyrobky/upravit");
+    string urlDelete = Url.Content("~/clenska-sekcia/vyrobky/odstranit");
+}
+
+<h1>VÝROBKY</h1>
+@*@Html.Action("GetFilter", "Producer", new { area = "Ecommerce" })*@
+@{
+    var grid = new WebGrid(null, rowsPerPage: Model.ItemsPerPage, defaultSort: "NazovVyrobku");
+    grid.Bind(Model.Items, rowCount: Model.TotalItems, autoSortAndPage: false);
+    @grid.GetHtml(
+                    htmlAttributes: new { @id = "productlist" },
+                    mode: WebGridPagerModes.All,
+                    tableStyle: "webgrid",
+                    headerStyle: "",
+                    footerStyle: "paging",
+                    alternatingRowStyle: "",
+                    columns: grid.Columns(
+                        grid.Column("", "", format: a =>
+                            Html.Raw(
+                            "<span class='tools'>" +
+                            "<a href='" + string.Format("{0}?id={1}", urlUpdate, a.pk.ToString()) + "' title='Upraviť výrobok' class='nowrap'><i class='fa fa-edit'></i></a>"
+                            + "&#160;&#160;" +
+                            "<a href='" + string.Format("{0}?id={1}", urlDelete, a.pk.ToString()) + "' title='Odstrániť výrobok' class='nowrap'><i class='fa fa-trash'></i></a>"
+                            + "</span>")),
+                        grid.Column("KodVyrobku", "Kód", canSort: true),
+                        grid.Column("NazovVyrobku", "Názov", canSort: true)
+                        //grid.Column("KodTovaru", "Kód", canSort: true)
+                        ));
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#productlist thead tr th:first').html(
+                "<a href='@urlInsert' class='btn btn-default' title='Pridať výrobok'>Pridať</a>"
+                );
+        });
+    </script>
+
+}

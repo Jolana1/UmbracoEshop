@@ -16,6 +16,9 @@ namespace UmbracoEshop.lib.Models
 {
     public class VyrobcaModel : _BaseModel
     {
+        //[Required(ErrorMessage = "Kód výrobcu musí byť zadaný")]
+        //[Display(Name = "Kód výrobcu")]
+        //public string KodVyrobcu { get; set; }
         [Required(ErrorMessage = "Názov výrobcu musí byť zadaný")]
         [Display(Name = "Názov výrobcu")]
         public string NazovVyrobcu { get; set; }
@@ -31,6 +34,8 @@ namespace UmbracoEshop.lib.Models
         {
             this.pk = src.pk;
             this.NazovVyrobcu = src.NazovVyrobcu;
+            //this.KodVyrobcu = src.KodVyrobcu;
+
             //this.VyrobcaDescription = src.VyrobcaDescription;
             //this.VyrobcaWeb = src.VyrobcaWeb;
         }
@@ -39,6 +44,8 @@ namespace UmbracoEshop.lib.Models
         {
             trg.pk = this.pk;
             trg.NazovVyrobcu = this.NazovVyrobcu;
+            //trg.KodVyrobcu = this.KodVyrobcu;
+
             //trg.VyrobcaDescription = this.VyrobcaDescription;
             //trg.VyrobcaWeb = this.VyrobcaWeb;
         }

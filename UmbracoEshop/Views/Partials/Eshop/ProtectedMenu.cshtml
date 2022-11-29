@@ -2,7 +2,7 @@
 @using UmbracoEshop.lib.Models
 @using UmbracoEshop.lib.Repositories
 @{
-    MembershipUser user = /*Umbraco.MemberIsLoggedOn() ? */System.Web.Security.Membership.GetUser();
+    MembershipUser user = System.Web.Security.Membership.GetUser();
     bool addSeparator = false;
 }
 
@@ -53,7 +53,7 @@
                     <div class="separator"></div>
                     <ul class="admin-menu">
                         <li><a href="@Url.Content("~/clenska-sekcia/vyrobcovia")">Výrobcovia</a></li>
-                        <li><a href="@Url.Content("~/clenska-sekcia/produkty")">Produkty</a></li>
+                        <li><a href="@Url.Content("~/clenska-sekcia/vyrobky")">Výrobky</a></li>
                         @*<li><a href="@Url.Content("~/clenska-sekcia/kategorie")">Kategórie</a></li>*@
                     </ul>
                     @*<div class="separator"></div>

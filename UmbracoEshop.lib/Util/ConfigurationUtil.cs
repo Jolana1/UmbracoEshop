@@ -13,6 +13,8 @@ namespace UmbracoEshop.lib.Util
         public const string AfterLoginFormId = "eshop.AfterLoginFormId";
         public const string AfterPasswordResetFormId = "eshop.AfterPasswordResetFormId";
         public const string EshopZoznamVyrobcovFormId = "eshop.ZoznamVyrobcovFormId";
+        public const string EshopZoznamVyrobkovFormId = "eshop.ZoznamVyrobkovFormId";
+
 
 
         public static int GetPageId(string pageKey)
