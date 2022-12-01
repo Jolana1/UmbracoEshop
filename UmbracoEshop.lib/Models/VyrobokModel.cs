@@ -19,15 +19,32 @@ namespace UmbracoEshop.lib.Models
         [Required(ErrorMessage = "Kód výrobku musí byť zadaný")]
         [Display(Name = "Kód výrobku")]
         public string KodVyrobku { get; set; }
+
         [Required(ErrorMessage = "Názov výrobku musí byť zadaný")]
         [Display(Name = "Názov výrobku")]
         public string NazovVyrobku { get; set; }
+
+        [Required(ErrorMessage = "Cena výrobku musí byť zadaná")]
+        [Display(Name = "Cena výrobku")]
+        public string CenaVyrobku { get; set; }
+
+        [AllowHtml]
+        [Display(Name = "Popis výrobku")]
+        public string PopisVyrobku { get; set; }
+
+        public string CenaVyrobkuAMena()
+        {
+            return PriceUtil.GetPriceStringWithCurrency(this.CenaVyrobku);
+        }
 
         public void CopyDataFrom(Vyrobok src)
         {
             this.pk = src.pk;
             this.NazovVyrobku = src.NazovVyrobku;
             this.KodVyrobku = src.KodVyrobku;
+            this.CenaVyrobku = PriceUtil.NumberToEditorString(src.CenaVyrobku);
+            this.PopisVyrobku = src.PopisVyrobku;
+            
             //this.VyrobokDescription = src.VyrobokDescription;
             //this.VyrobokWeb = src.VyrobokWeb;
         }
@@ -37,6 +54,10 @@ namespace UmbracoEshop.lib.Models
             trg.pk = this.pk;
             trg.NazovVyrobku = this.NazovVyrobku;
             trg.KodVyrobku = this.KodVyrobku;
+            trg.CenaVyrobku = PriceUtil.NumberFromEditorString(this.CenaVyrobku);
+            trg.PopisVyrobku = this.PopisVyrobku;
+
+
             //trg.VyrobokDescription = this.VyrobokDescription;
             //trg.VyrobokWeb = this.VyrobokWeb;
         }

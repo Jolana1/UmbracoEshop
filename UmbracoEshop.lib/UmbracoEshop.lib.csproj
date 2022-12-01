@@ -67,9 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\PublicProductController.cs" />
     <Compile Include="Controllers\VyrobokController .cs" />
     <Compile Include="Controllers\VyrobcaController.cs" />
     <Compile Include="Controllers\_BaseController.cs" />
+    <Compile Include="Models\CKEditorModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\VyrobokModel.cs" />
     <Compile Include="Models\VyrobcaModel.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Repositories\VyrobokRepository.cs" />
     <Compile Include="Repositories\_BaseRepository.cs" />
     <Compile Include="Util\ConfigurationUtil.cs" />
+    <Compile Include="Util\PriceUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Repositories\_dbEshop.sql" />

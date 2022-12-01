@@ -4,6 +4,8 @@ CREATE TABLE [dbo].[eshopVyrobok](
 	[pk] [uniqueidentifier] NOT NULL,
     [kodVyrobku] [nvarchar](255) NULL,
 	[nazovVyrobku] [nvarchar](255) NULL,
+	[cenaVyrobku] [decimal](18, 2) NOT NULL,
+	[popisVyrobku] [ntext] NULL,
 	
  CONSTRAINT [PK_eshopVyrobok] PRIMARY KEY CLUSTERED 
 (

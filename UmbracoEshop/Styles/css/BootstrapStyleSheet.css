@@ -280,3 +280,9 @@ table.webgrid {
     table.webgrid img.grid-img {
         max-height: 50px;
     }
+/*class public-product*/
+.public-product{
+    padding:10px;
+    border:1px solid #ccc;
+    margin-bottom:20px;
+}

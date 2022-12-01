@@ -18,40 +18,52 @@
                         @Html.ValidationMessageFor(m => m.KodVyrobku)
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-6">
                     <div class="form-item">
                         @Html.LabelFor(x => x.NazovVyrobku)
                         @Html.TextBoxFor(m => m.NazovVyrobku, new { @class = "form-control" })
                         @Html.ValidationMessageFor(m => m.NazovVyrobku)
                     </div>
                 </div>
-            </div>
-                    @*<div class="col-md-6">
+                <div class="col-md-3">
                     <div class="form-item">
-                        @Html.LabelFor(x => x.ProducerWeb)
-                        @Html.TextBoxFor(m => m.ProducerWeb, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.ProducerWeb)
+                        @Html.LabelFor(x => x.CenaVyrobku)
+                        @Html.TextBoxFor(m => m.CenaVyrobku, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.CenaVyrobku)
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-item">
+                        @Html.LabelFor(x => x.PopisVyrobku)
+                        @Html.TextAreaFor(m => m.PopisVyrobku, new { @class = "form-control ckedit" })
+                        @Html.ValidationMessageFor(m => m.PopisVyrobku)
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="form-item">
-                        @Html.LabelFor(x => x.ProducerDescription)
-                        @Html.TextAreaFor(m => m.ProducerDescription, new { @class = "form-control ckedit", rows = 10 })
-                        @Html.ValidationMessageFor(m => m.ProducerDescription)
-                    </div>
-                </div>
-                @*</div>*@
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="#" onclick="document.getElementById('submitButton').click(); return false;" class="tlacitko-moje"@*btn btn-default btn-lg*@>Zapísať</a>
-                        <a href="@Url.Content("~/clenska-sekcia/vyrobky")" class="tlacitko-moje">Späť</a>
-                        <input type="submit" id="submitButton" class="hidden" />
-                    </div>
+                    <a href="#" onclick="document.getElementById('submitButton').click(); return false;" class="tlacitko-moje">Zapísať</a>
+                    <a href="@Url.Content("~/clenska-sekcia/vyrobky")" class="tlacitko-moje">Späť</a>
+                    <input type="submit" id="submitButton" class="hidden" />
                 </div>
             </div>
+        </div>
     }
 }
+@Html.Partial("Eshop/_CKEditor", new UmbracoEshop.lib.Models.CKEditorModel("ckedit", "400"))
+
+
+
+
+
+
+
+
+
+
 
 @*@Html.Partial("Ecommerce/_CKEditor", new naplnspajzu.lib.Models.Ecommerce.CKEditorModel("ckedit", "200"))*@
+@*btn btn-default btn-lg*@

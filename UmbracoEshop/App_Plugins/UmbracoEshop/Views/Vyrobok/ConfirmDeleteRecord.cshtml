@@ -19,11 +19,18 @@
                             @Html.ValidationMessageFor(m => m.KodVyrobku)
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-6">
                         <div class="form-item">
                             @Html.LabelFor(x => x.NazovVyrobku)
                             @Html.TextBoxFor(m => m.NazovVyrobku, new { @class = "form-control", @readonly = "readonly" })
                             @Html.ValidationMessageFor(m => m.NazovVyrobku)
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-item">
+                            @Html.LabelFor(x => x.CenaVyrobku)
+                            @Html.TextBoxFor(m => m.CenaVyrobku, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.CenaVyrobku)
                         </div>
                     </div>
                 </div>
