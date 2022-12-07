@@ -309,8 +309,10 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbr
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoEshop.lib.Controllers.MemberController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoEshop.lib.Controllers.PublicProductController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoEshop.lib.Controllers.QuoteApiController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoEshop.lib.Controllers.VyrobokController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoEshop.lib.Controllers.VyrobcaController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoEshop.lib.Controllers._BaseApiController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoEshop.lib.Controllers._BaseController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
@@ -471,6 +473,8 @@ Umbraco.Web.Editors.MediaTypeController, Umbraco.Web, Version=8.0.0.0, Culture=n
 Umbraco.Web.Editors.SectionController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Editors.MediaController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoEshop.lib.Controllers.QuoteApiController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoEshop.lib.Controllers._BaseApiController, UmbracoEshop.lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Mvc.SurfaceController
 

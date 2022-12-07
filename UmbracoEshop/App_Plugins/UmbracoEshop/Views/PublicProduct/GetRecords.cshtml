@@ -9,16 +9,33 @@
 {
 <div class="public-product">
     Kód: @vyrobok.KodVyrobku
-    <br/>
+    <br />
     Názov: @vyrobok.NazovVyrobku
-    <br/>
+    <br />
     Cena: @vyrobok.CenaVyrobkuAMena()
     <div class="product-description">
 
         @Html.Raw(vyrobok.PopisVyrobku)
 
     </div>
+    <br />
+    <div>
+        <a href="#" onclick="pridatDoKosika(); return false;" data-vyrobok="@vyrobok.pk">Pridať do košíka</a>
+    </div>
 
 
 </div>                
 }
+<script>
+    function pridatDoKosika() {
+        var param = " ";
+
+        $.ajax('/Umbraco/UmbracoEshop/QuoteApi/AddProductToQuote?=id'+param,
+            {
+                type: 'POST',
+                success: function (data) {
+                    alert(data);
+                }
+            });
+    }
+</script>
