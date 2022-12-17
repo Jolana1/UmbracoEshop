@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Web.Mvc;
 using Umbraco.Web.Mvc;
 using UmbracoEshop.lib.Models;
@@ -32,9 +32,12 @@ namespace UmbracoEshop.lib.Controllers
 
             VyrobokRepository repository = new VyrobokRepository();
             VyrobokPagingListModel model = VyrobokPagingListModel.CreateCopyFrom(
-                repository.GetPage(page, _PagingModel.AllItemsPerPage/*DefaultItemsPerPage*/, sort, sortDir));
+                repository.GetPage(page, _PagingModel.AllItemsPerPage/*DefaultItemsPerPage*/, sort, sortDir)
+                );
+
+            model.SessionId = this.CurrentSessionId;
 
             return View(model);
-        }
+        } 
     }
 }

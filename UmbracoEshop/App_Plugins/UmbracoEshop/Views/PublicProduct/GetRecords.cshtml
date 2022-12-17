@@ -7,30 +7,34 @@
 
 @foreach (VyrobokModel vyrobok in Model.Items)
 {
-<div class="public-product">
-    Kód: @vyrobok.KodVyrobku
-    <br />
-    Názov: @vyrobok.NazovVyrobku
-    <br />
-    Cena: @vyrobok.CenaVyrobkuAMena()
-    <div class="product-description">
+    <div class="public-product">
+        Kód: @vyrobok.KodVyrobku
+        <br />
+        Názov: @vyrobok.NazovVyrobku
+        <br />
+        Cena: @vyrobok.CenaVyrobkuAMena()
+        <div class="product-description">
 
-        @Html.Raw(vyrobok.PopisVyrobku)
+            @Html.Raw(vyrobok.PopisVyrobku)
+
+        </div>
+
+        <div>
+            <a href="#" onclick="pridatDoKosika(this); return false;" data-vyrobok="@vyrobok.pk" data-sessionid="@Model.SessionId">Pridať do košíka</a>
+        </div>
+
 
     </div>
-    <br />
-    <div>
-        <a href="#" onclick="pridatDoKosika(); return false;" data-vyrobok="@vyrobok.pk">Pridať do košíka</a>
-    </div>
-
-
-</div>                
 }
-<script>
-    function pridatDoKosika() {
-        var param = " ";
 
-        $.ajax('/Umbraco/UmbracoEshop/QuoteApi/AddProductToQuote?=id'+param,
+<script>
+    function pridatDoKosika(el) {
+        var self = $(el);
+        var param = self.data('vyrobok') + '|' + self.data('sessionid');                /* + '|' + "abc"*/
+        /*alert(param);*/
+
+
+        $.ajax('/Umbraco/UmbracoEshop/QuoteApi/AddProductToQuote?id=' + param,
             {
                 type: 'POST',
                 success: function (data) {

@@ -83,6 +83,7 @@ namespace UmbracoEshop.lib.Models
     public class VyrobokPagingListModel : _PagingModel
     {
         public List<VyrobokModel> Items { get; set; }
+        public string SessionId { get; set; }
 
         public static VyrobokPagingListModel CreateCopyFrom(Page<Vyrobok> srcArray)
         {

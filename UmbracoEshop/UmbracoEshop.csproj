@@ -33,6 +33,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -5118,6 +5120,7 @@
     <Content Include="Styles\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="Styles\ckeditor\skins\moono-lisa\readme.md" />
     <Content Include="Views\Partials\Eshop\_CKEditor.cshtml" />
+    <Content Include="Views\MacroPartials\NakupnyKosik.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

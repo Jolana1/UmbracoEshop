@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Web;
 using Umbraco.Web.Mvc;
 using UmbracoEshop.lib.Util;
@@ -11,10 +11,28 @@ namespace UmbracoEshop.lib.Controllers
 {
     public class _BaseController : SurfaceController
     {
+        public string CurrentSessionId
+        {
+            get
+            {
+                return new _BaseControllerUtil().CurrentSessionId;     /*HttpContext.Current.Session.SessionID;*/
+            }
+        }
+        //public class _BaseControllerUtil
+        //{
+        //public string CurrentSessionId
+        //{
+        //    get
+        //    {
+        //        return new _BaseControllerUtil().CurrentSessionId;
+        //    }
+        //}
+
         public string DefaultImgPath
         {
             get
             {
+
                 return this.HttpContext.Server.MapPath("~/Styles/Images");
             }
         }
