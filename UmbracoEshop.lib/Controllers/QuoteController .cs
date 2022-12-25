@@ -15,7 +15,9 @@ namespace UmbracoEshop.lib.Controllers
     {
         public ActionResult Basket()
         {
-            return View();
+            BasketModel model = new BasketModel(this.CurrentSessionId);
+
+            return View(model);
         }
     }
 }

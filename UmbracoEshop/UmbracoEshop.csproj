@@ -326,6 +326,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\chosen.jquery.js" />
     <Content Include="Scripts\chosen.jquery.min.js" />
+    <Content Include="Scripts\umbracoEshop.js" />
     <Content Include="Scripts\document.ready.js" />
     <Content Include="Scripts\document.ready.min.js" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Member\Login.cshtml" />
@@ -338,6 +339,7 @@
     <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobok\EditRecord.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobok\GetRecords.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\PublicProduct\GetRecords.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Quote\Basket.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -374,6 +376,7 @@
     <Content Include="Scripts\spectrum.min.js" />
     <Content Include="Scripts\typed.js" />
     <Content Include="Scripts\typed.min.js" />
+    <Content Include="Scripts\vksenic.js" />
     <Content Include="Scripts\waypoints.js" />
     <Content Include="Scripts\waypoints.min.js" />
     <Content Include="Styles\ckeditor\adapters\jquery.js" />
@@ -5121,6 +5124,7 @@
     <Content Include="Styles\ckeditor\skins\moono-lisa\readme.md" />
     <Content Include="Views\Partials\Eshop\_CKEditor.cshtml" />
     <Content Include="Views\MacroPartials\NakupnyKosik.cshtml" />
+    <Content Include="Views\Partials\Layout\_HeaderBasket.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

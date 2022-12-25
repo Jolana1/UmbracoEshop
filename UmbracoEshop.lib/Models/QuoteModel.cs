@@ -11,7 +11,7 @@ using UmbracoEshop.lib.Util;
 
 namespace UmbracoEshop.lib.Models
 {
-    public class QuoteModel : _BaseModel
+    public class QuoteModel : _BaseModel                                                       /*tento model je vlastne obsah položiek košika*/
     {
 
         public string DateCreate { get; set; }
@@ -124,25 +124,25 @@ namespace UmbracoEshop.lib.Models
     //    }
     //}
 
-    public class QuotePagingListModel : _PagingModel
-    {
-        public List<QuoteModel> Items { get; set; }
+    //public class QuotePagingListModel : _PagingModel
+    //{
+    //    public List<QuoteModel> Items { get; set; }
 
-        public static QuotePagingListModel CreateCopyFrom(Page<Quote> srcArray)
-        {
-            QuotePagingListModel trgArray = new QuotePagingListModel();
-            trgArray.ItemsPerPage = (int)srcArray.ItemsPerPage;
-            trgArray.TotalItems = (int)srcArray.TotalItems;
-            trgArray.Items = new List<QuoteModel>(srcArray.Items.Count + 1);
+    //    public static QuotePagingListModel CreateCopyFrom(Page<Quote> srcArray)
+    //    {
+    //        QuotePagingListModel trgArray = new QuotePagingListModel();
+    //        trgArray.ItemsPerPage = (int)srcArray.ItemsPerPage;
+    //        trgArray.TotalItems = (int)srcArray.TotalItems;
+    //        trgArray.Items = new List<QuoteModel>(srcArray.Items.Count + 1);
 
-            foreach (Quote src in srcArray.Items)
-            {
-                trgArray.Items.Add(QuoteModel.CreateCopyFrom(src));
-            }
+    //        foreach (Quote src in srcArray.Items)
+    //        {
+    //            trgArray.Items.Add(QuoteModel.CreateCopyFrom(src));
+    //        }
 
-            return trgArray;
-        }
-    }
+    //        return trgArray;
+    //    }
+    //}
 
     //public class QuoteFilterModel : _BaseUserPropModel
     //{

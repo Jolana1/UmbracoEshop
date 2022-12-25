@@ -1,0 +1,19 @@
+﻿@using UmbracoEshop.lib.Models
+@model BasketModel
+
+<h1>KOŠÍK</h1>
+@foreach (Product2QuoteModel item in Model.QuoteItems)
+{
+    <div class="public-product">
+        Kód: @item.ItemCode
+        <br />
+        Názov: @item.ItemName
+        <br />
+        Množstvo: @item.ItemPcs @item.UnitName
+        <br />
+        Jednotková cena: @item.JednotkovaCenaAMena()
+        <br />
+        Cena spolu: @item.CelkovaCenaAMena()
+
+    </div>
+}

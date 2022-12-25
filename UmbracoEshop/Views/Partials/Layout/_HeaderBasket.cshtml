@@ -1,0 +1,32 @@
+﻿@inherits UmbracoViewPage
+@using UmbracoEshop.lib.Controllers
+@{
+    string sessionId = new _BaseControllerUtil().CurrentSessionId;
+    }
+<div>
+    Obsah<i class="fa fa-fw fa-shopping-cart"></i>:<span class="header-basket-pcs"></span> Ks,Súčet s Dph:<span class="header-basket-price"></span>
+    
+    @*Obsah košíka: <span class="header-basket-pcs"></span> , <span class="header-basket-price"></span>*@
+</div>
+
+
+<script>
+    nastavSessionId = ('@sessionId')
+    var _umbracoEshop = ""; /*povodny Js obsahKosika,ktory tam bol v HeaderBasket.cshtml pred umbracoEshop.js */
+    $(document).ready(function () {
+        obsaKosika();
+});
+
+    function obsaKosika() {
+        var param = '@sessionId'
+        $.ajax('/Umbraco/UmbracoEshop/QuoteApi/BasketInfo?id=' + param,
+            {
+                type: 'POST',
+                success: function (data) {
+                    $('.header-basket-pcs').html(data.Pocet);
+                    $('.header-basket-price').html(data.Cena);
+                }
+            });
+    }
+   
+</script>
