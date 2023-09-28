@@ -300,6 +300,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Lang\cs.xml" />
+    <Content Include="App_Data\Lang\en.xml" />
+    <Content Include="App_Data\MailTemplates\ContactSendSuccess_Sk.html" />
+    <Content Include="App_Data\MailTemplates\EmailOne_Sk.html" />
+    <Content Include="App_Data\MailTemplates\LostPassword_Sk.html" />
+    <Content Include="App_Data\MailTemplates\NewRegistration_Sk.html" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -340,6 +346,8 @@
     <Content Include="App_Plugins\UmbracoEshop\Views\Vyrobok\GetRecords.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\PublicProduct\GetRecords.cshtml" />
     <Content Include="App_Plugins\UmbracoEshop\Views\Quote\Basket.cshtml" />
+    <Content Include="App_Plugins\UmbracoEshop\Views\Contact\ContactForm.cshtml" />
+    <None Include="bundleconfig.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -376,6 +384,9 @@
     <Content Include="Scripts\spectrum.min.js" />
     <Content Include="Scripts\typed.js" />
     <Content Include="Scripts\typed.min.js" />
+    <Content Include="Scripts\umbracoEshop.min.js">
+      <DependentUpon>umbracoEshop.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\vksenic.js" />
     <Content Include="Scripts\waypoints.js" />
     <Content Include="Scripts\waypoints.min.js" />
@@ -776,6 +787,9 @@
     <Content Include="Styles\css\bootstrap.css" />
     <Content Include="Styles\css\bootstrap.min.css" />
     <Content Include="Styles\css\BootstrapStyleSheet.css" />
+    <Content Include="Styles\css\BootstrapStyleSheet.min.css">
+      <DependentUpon>BootstrapStyleSheet.css</DependentUpon>
+    </Content>
     <Content Include="Styles\css\chosen\chosen-sprite%402x.png" />
     <Content Include="Styles\css\chosen\chosen-sprite.png" />
     <Content Include="Styles\css\chosen\chosen.css" />
@@ -4896,6 +4910,7 @@
     <Content Include="Umbraco\Views\users\views\overlays\remove.html" />
     <Content Include="Umbraco\Views\users\views\users\users.html" />
     <Content Include="Umbraco\Views\users\views\user\details.html" />
+    <Content Include="Views\MacroPartials\PublicProductList.cshtml" />
     <Content Include="Views\Partials\Layout\_MainNavigation.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -5104,7 +5119,6 @@
     <Content Include="Views\MacroPartials\protVyrobkyOdstranit.cshtml" />
     <Content Include="Views\MacroPartials\protVyrobkyPridat.cshtml" />
     <Content Include="Views\MacroPartials\protVyrobkyUpravit.cshtml" />
-    <Content Include="Views\MacroPartials\PublicProductList.cshtml" />
     <Content Include="Styles\ckeditor\CHANGES.md" />
     <Content Include="Styles\ckeditor\LICENSE.md" />
     <Content Include="Styles\ckeditor\plugins\scayt\CHANGELOG.md" />
@@ -5125,6 +5139,7 @@
     <Content Include="Views\Partials\Eshop\_CKEditor.cshtml" />
     <Content Include="Views\MacroPartials\NakupnyKosik.cshtml" />
     <Content Include="Views\Partials\Layout\_HeaderBasket.cshtml" />
+    <Content Include="Views\MacroPartials\ContactForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,5 +1,4 @@
-﻿
-/****** Object:  Table [dbo].[eshopVyrobok] ******/
+﻿/****** Object:  Table [dbo].[eshopVyrobok] ******/
 CREATE TABLE [dbo].[eshopVyrobok](
 	[pk] [uniqueidentifier] NOT NULL,
     [kodVyrobku] [nvarchar](255) NULL,

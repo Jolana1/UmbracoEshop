@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "Styles/css/BootstrapStyleSheet.min.css",
+    "inputFiles": [
+      "Styles/css/BootstrapStyleSheet.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/umbracoEshop.min.js",
+    "inputFiles": [
+      "Scripts/umbracoEshop.js"
+    ]
+  }
+]

@@ -69,12 +69,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
     <Compile Include="Controllers\QuoteController .cs" />
     <Compile Include="Controllers\PublicProductController.cs" />
     <Compile Include="Controllers\QuoteApiController.cs" />
-    <Compile Include="Controllers\VyrobokController .cs" />
+    <Compile Include="Controllers\UmbracoEshopApiController.cs" />
     <Compile Include="Controllers\VyrobcaController.cs" />
+    <Compile Include="Controllers\VyrobokController .cs" />
     <Compile Include="Controllers\_BaseApiController.cs" />
     <Compile Include="Controllers\_BaseController.cs" />
     <Compile Include="Models\BasketModel.cs" />
@@ -82,9 +84,10 @@
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Product2QuoteModel.cs" />
     <Compile Include="Models\QuoteModel.cs" />
+    <Compile Include="Repositories\UmbracoCmsContent\OdoslanieSpravyModel.cs" />
     <Compile Include="Models\VyrobokModel.cs" />
     <Compile Include="Models\VyrobcaModel.cs" />
-    <Compile Include="Models\_BaseModel.cs" />
+    <Compile Include="Repositories\UmbracoCmsContent\_BaseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Product2QuoteRepository.cs" />
     <Compile Include="Repositories\QuoteRepository.cs" />
@@ -95,10 +98,18 @@
     <Compile Include="UmbracoEshopApp.cs" />
     <Compile Include="Util\ConfigurationUtil.cs" />
     <Compile Include="Util\DateTimeUtil.cs" />
+    <Compile Include="Util\Mailer.cs" />
     <Compile Include="Util\PriceUtil.cs" />
+    <Compile Include="Util\TranslateUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Repositories\_dbEshop.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\dufeksoft\dufeksoft.lib\dufeksoft.lib\dufeksoft.lib.csproj">
+      <Project>{3B16A948-37A3-4301-B11B-BFDE6E95FB10}</Project>
+      <Name>dufeksoft.lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

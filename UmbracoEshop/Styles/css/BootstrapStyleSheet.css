@@ -1,12 +1,16 @@
 ﻿
 .navbar-default {
     border: none;
-}
-.navbar-default .navbar-header 
-    img {
-        max-height: 50px;
-        
     }
+/*nakupny kosik formatovanie*/
+.fa-shopping-cart:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+.navbar-default .navbar-header
+img {
+    max-height: 50px;
+}
 .page-body{
     padding-top:100px;
 }
